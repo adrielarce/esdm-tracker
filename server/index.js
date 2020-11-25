@@ -10,7 +10,7 @@ const users = require("./routes/user");
 
 const app = express()
 const apiPort = process.env.PORT || 3000
-
+const path = require("path")
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
@@ -32,5 +32,8 @@ app.use('/sessions', sessionsRouter)
 //require("./config/passport")(passport);
 // Routes
 //app.use("/api/users", users);
-
+// Right before your app.listen(), add this:
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
