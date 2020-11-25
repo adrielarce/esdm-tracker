@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "esdm therapy tracking app",
   "main": "index.js",
+  "heroku-postbuild": "npm install && npm start",
   "scripts": {
     "start": "concurrently \"cd ./server && node index.js\" \"cd ./client && npm start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
