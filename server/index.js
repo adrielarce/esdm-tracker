@@ -33,5 +33,5 @@ app.use('/sessions', sessionsRouter)
 // Routes
 //app.use("/api/users", users);
 // Right before your app.listen(), add this:
-app.use('*', express.static(path.join(__dirname, "client", "build")))
+app.use(path.join(__dirname, 'client/build'))
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
