@@ -67,11 +67,6 @@ function SideBar(props) {
   const drawer = (
     <div>
       <div className={classes.toolbar} />
-      <Divider />
-      <Link to="/" className="navbar-brand">
-        ESDM Therapy Tracker
-      </Link>
-    <Divider />
     <List>
       <ListItem button key="Dashboard">
           <ListItemIcon><HomeIcon /></ListItemIcon>

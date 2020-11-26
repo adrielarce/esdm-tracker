@@ -1,7 +1,6 @@
 import axios from 'axios'
-const port = process.env.PORT || 3000
 const api = axios.create({
-    baseURL: 'http://localhost:'+port+'/program',
+    baseURL: 'http://localhost:3000/program',
 })
 
 export const insertGoal = payload => api.post(`/program`, payload)

@@ -152,7 +152,7 @@ class SessionInsert extends Component {
                 <Label>Completed:</Label>
                     <Switch
                         checked={completed}
-                        value={completed}
+                        value={true}
                         onChange={this.handleChangeInputCompleted}
                         color="primary"
                         name="completed"

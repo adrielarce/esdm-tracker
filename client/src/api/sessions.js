@@ -1,8 +1,7 @@
 import axios from 'axios'
 
-const port = process.env.PORT || 3000
 const api = axios.create({
-    baseURL: 'http://localhost:'+port+'/sessions',
+    baseURL: 'http://localhost:3000/sessions',
 })
 
 export const createSession = payload => api.post(`/sessions`, payload)

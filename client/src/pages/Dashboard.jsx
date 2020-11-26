@@ -35,7 +35,7 @@ class GoalUpdate extends Component {
             <div style={{flexGrow: 1}}>
                 <Paper style={{padding:'1rem'}}>
                 <Grid container spacing={3}>
-                    <Grid item xs={4}>
+                    <Grid item sm={4}>
                         <Card style={{padding: 2,textAlign: 'center'}}>
                             <CardHeader title="Client Info" style={{backgroundColor:"#748ffc",color:'white'}}></CardHeader>
                             <CardContent>
@@ -56,7 +56,7 @@ class GoalUpdate extends Component {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item sm={4}>
                         <Card style={{padding: 2,textAlign: 'center'}}>
                             <CardHeader title="Upcoming Sessions" style={{backgroundColor:"#748ffc",color:'white'}}></CardHeader>
                             <CardContent>
@@ -91,18 +91,7 @@ class GoalUpdate extends Component {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} sm={3}>
-                    <Paper style={{padding: 2,textAlign: 'center'}}>xs=6 sm=3</Paper>
-                    </Grid>
-                    <Grid item xs={6} sm={3}>
-                    <Paper style={{padding: 2,textAlign: 'center'}}>xs=6 sm=3</Paper>
-                    </Grid>
-                    <Grid item xs={6} sm={3}>
-                    <Paper style={{padding: 2,textAlign: 'center'}}>xs=6 sm=3</Paper>
-                    </Grid>
-                    <Grid item xs={6} sm={3}>
-                    <Paper style={{padding: 2,textAlign: 'center'}}>xs=6 sm=3</Paper>
-                    </Grid>
+
                 </Grid>
             </Paper>
             </div>
